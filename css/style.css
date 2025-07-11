@@ -1,10 +1,8 @@
 /*
-Theme Name: Meloo
-Theme URI: http://meloo.rascalsthemes.com
-Author: Rascals Themes
-Author URI: http://themeforest.net/user/rascals
-Description: Continuous Music Playback HTML Template
-Version: 1.2.0
+Theme Name: Mimos da Dany
+Author: GrazzaRTE
+Author URI: https://github.com/gacascardi
+
 */
 
 /*------------------------------------------------------------------
@@ -12,16 +10,15 @@ Version: 1.2.0
 [Table of contents]
 
 1. Reset & Clearfix
-2. Basic Elements & Classes
-3. Forms
-4. Helper Classes
-5. Typography
-6. Lists
-7. Header & Navigation
-8. Footer
+2. Elementos e Classes Básicos3. FORMULÁRIOS
+4. Classes Auxiliares
+5. Tipografia
+6. Listas
+7. Cabeçalho e Navegação
+8. Rodapé
 9. AJAX
-10. Sections
-11. Intro / Hero Section
+10. Seções
+11. Introdução
 12. Recent Releases
 13. Event Countdown
 15. Events
@@ -45,13 +42,13 @@ Version: 1.2.0
 
 
 /* ==================================================
-  1. Reset & Clearfix (http://meyerweb.com/eric/tools/css/reset/) 
+  1. Reset & Clearfix
 ================================================== */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,and,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,input,textarea,select{background:transparent;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}del{text-decoration:line-through}hr{background:transparent;border:0;clear:both;color:transparent;height:1px;margin:0;padding:0}mark{background-color:#ffffb3;font-style:italic}input,select{vertical-align:middle}ins{background-color:red;color:white;text-decoration:none}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}
 
 
 /* ==================================================
-  2. Basic Elements & Classes 
+  2. 2. Elementos e Classes Básicos 
 ================================================== */
 * {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -139,7 +136,7 @@ small {
 
 
 /* ==================================================
-  3. Forms 
+  3. FORMULÁRIOS 
 ================================================== */
 label {
 	cursor: pointer;
@@ -209,7 +206,7 @@ textarea:-moz-placeholder {
 
 
 /* ==================================================
-  4. Helper Classes 
+  4. Classes Auxiliares 
 ================================================== */
 .hidden { display: none; }
 .disabled { cursor: auto; }
@@ -266,7 +263,7 @@ img.alignright { margin-bottom: 30px; margin-left: 20px; }
 
 
 /* ==================================================
-  5. Typography 
+  5. Tipografia 
 ================================================== */
 
 /* Extra Large heading */
@@ -293,14 +290,14 @@ img.alignright { margin-bottom: 30px; margin-left: 20px; }
 	display: block;
 	position: relative;
 	top: -30px;
-	font-size: 21px;
+	font-size: 11px;
 	color: #f5f4f4;
 	text-transform: uppercase;
 }
 
 /* Content Title */
 .content-title {
-	font-size: 65px;
+	font-size: 45px;
 	text-transform:uppercase;
 	position: relative;
 	z-index: 1;
@@ -351,7 +348,7 @@ img.alignright { margin-bottom: 30px; margin-left: 20px; }
 
 
 /* ==================================================
-  6. Lists 
+  6. Listas 
 ================================================== */
 ol,ul {
     padding: 0 0 0 20px;
@@ -402,7 +399,7 @@ ol,ul {
 
 
 /* ==================================================
-   7. Header & Navigation 
+   7. Cabeçalho e Navegação 
 ================================================== */
 	
 
@@ -427,21 +424,21 @@ ol,ul {
 }	
 
 
-/* Main Navigation
+/* Main Navegação
  -------------------------------- */
 
-/* Navigation container */
+/* Navegação container */
 .nav-container {
 	height: 65px;
 	padding: 0 40px;
 	position: relative;
 	width: 100%;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-webkit-box-sizing: border-box; /* Safari/Chrome*/
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-/* Navigation list */
+/* Listas de Navegação */
 #nav { 
 	float: right;
 	z-index: 22;
@@ -521,10 +518,10 @@ ol,ul {
 					}
 				
 
-/* Icon Navigation
+/* Icones Navegação
  -------------------------------- */
 
-/* Navigation list */
+/* Lista de Navegação */
 	#icon-nav {
 	float: right;
 	z-index: 23;
@@ -574,7 +571,7 @@ ol,ul {
 		}
 
 
-/* Responsive Trigger
+/* Responsivo Trigger
  -------------------------------- */
 .responsive-trigger {
     display: none;
@@ -631,14 +628,14 @@ ol,ul {
 	margin: 0;
 }
 
-/* Search
+/* Procurar
  -------------------------------- */
 #search-block {
 	width: 100%; 
 	display: none;
 }
 
-/* Search input */
+/* Procurar input */
 #search {
 	border: 0;
 	background-color: #cc0000;
@@ -682,7 +679,7 @@ ol,ul {
 	overflow: hidden;
 }
 .social-title {
-	font-size: 14px;
+	font-size: 15px;
 	color: #fff;
 	margin-bottom: 30px;
 	text-transform:uppercase;
@@ -709,7 +706,7 @@ ol,ul {
 }
 
 	
-/* Responsive Navigation
+/* Responsive Navegação
  -------------------------------- */
 #responsive-nav {
 	padding-top:40%;
@@ -830,7 +827,7 @@ body.responsive-block-on .site, body.responsive-block-on #header, body.responsiv
     -moz-transform: translateX(300px);
     transform: translateX(300px);
 }
-/* Removed empty rule set for body.responsive-block-on .theiaStickySidebar */
+
 .responsive-block .responsive-nav-image {
     position: absolute;
     left: 0;
@@ -929,7 +926,7 @@ body.responsive-block-on .responsive-block-layer {
 
 
 /* ==================================================
-  8. Footer 
+  8. Rodapé 
 ================================================== */
 #footer {
 	padding: 120px 0;
@@ -981,7 +978,7 @@ body.responsive-block-on .responsive-block-layer {
     left: 50%;
 }
 
-/* Image */
+/* Imagem */
 .loader-img {
 	text-align:center;
 	margin-bottom:20px;
@@ -1191,7 +1188,7 @@ body.apc-open .apc {
 
 
 /* ==================================================
-  10. Sections
+  10. Seções
 ================================================== */
 .section {
 	overflow: hidden;
@@ -1251,7 +1248,7 @@ body.apc-open .apc {
 
 
 /* ==================================================
-  11. Intro / Hero Section
+  11. Introdução
 ================================================== */
 
 /* Removed empty rule set */
@@ -1373,7 +1370,7 @@ body.apc-open .apc {
 
 
 /* ==================================================
-  13. Event Countdown 
+  13. Menu
 ================================================== */
 .event-countdown {
 	padding: 80px 0;
@@ -1460,7 +1457,7 @@ body.apc-open .apc {
 		}
 
 /* ==================================================
-  15. Events 
+  15. Menu "events"
 ================================================== */
 #events {
 	background: transparent url( ../images/events-bg.jpg) center top no-repeat;
@@ -1489,7 +1486,7 @@ body.apc-open .apc {
 }
 
 
-/* Events header
+/* Menu header "events"
  -------------------------------- */
 .events-header {
 	position: absolute;
@@ -1518,12 +1515,12 @@ body .scrollbar-thumb {
  -------------------------------- */
  
 .events-container {
-	padding:200px 0 100px;
+	padding:200px 0 200px;
 }
 .events-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 5px 0 5px 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -1660,7 +1657,7 @@ body .scrollbar-thumb {
 
 
 /* ==================================================
-  16. Biography 
+  16. Bio 
 ================================================== */
 #bio {
 	width: 100%;
@@ -1711,7 +1708,7 @@ COPILOT
 ================================================== */
 
 /* ==================================================
-  17. Contact 
+  17. Contato
 ================================================== */
 	
 	/* Google Map
@@ -1735,7 +1732,7 @@ COPILOT
 	}
 
 
-	/* Details
+	/* Detalhes
 	 -------------------------------- */
 	 .contact-link,
 	 .contact-info {
@@ -1772,7 +1769,7 @@ COPILOT
 
 
 /* ==================================================
-  18. Newsletter 
+  18. Newsletter LOGO
 ================================================== */
 #newsletter {
 	position: relative;
@@ -1784,7 +1781,7 @@ COPILOT
 	padding:50px 0;
 }
 
-	/* Form */
+	/* Forms */
 	#subscribe-form {
 		overflow: hidden;
 		margin-top: 0px;
@@ -1827,7 +1824,7 @@ COPILOT
 			
 
 /* ==================================================
-  19. Single Page/Project 
+  19. Single 
 ================================================== */
 .page-content {
 	height: auto;
@@ -1873,19 +1870,6 @@ COPILOT
 		display:block;
 	}
 	
-
-/* Tickets Block */
-.tickets-block {
-	text-align:center;
-	margin-top: -120px;
-	padding-bottom:100px;
-}
-	.tickets-note {
-		font-size: 15px;
-		display:block;
-		margin-top:10px;
-		color: rgba(255, 255, 255, 0.4);
-	}
 
 /* Big event date */
 .event-intro-date {
@@ -4762,7 +4746,7 @@ a:hover .text-fx-word p span,
 @media only screen and (max-width:810px) {
 
 
-	/* Typography
+	/* TIpografia
 	 -------------------------------- */
 
 	/* Content Title */
@@ -4796,7 +4780,7 @@ a:hover .text-fx-word p span,
 	}
 
 
-	/* Header & Navigation
+	/* Cabeçalho e Navegação
 	 -------------------------------- */
 
 	/* Logo	 */
@@ -5144,7 +5128,7 @@ a:hover .text-fx-word p span,
 @media only screen and (max-width:479px) {
 	
 
-	/* Header & Navigation
+	/* Cabeçalho e Navegação
 	 -------------------------------- */
 	.responsive-block {
         width: 280px;
@@ -5404,4 +5388,16 @@ a:hover .text-fx-word p span,
 			object-fit: cover; /* Cobre o espaço disponível */
 			object-position: center; /* Centraliza a imagem */
 		}
-	
+	/* Efeito padrão para todos os títulos principais */
+h1, h2, h3, h4, h5, h6, .content-title {
+    font-size: 38px;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: normal;
+    transition: color 0.3s;
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, .content-title:hover {
+    color: #cc0000;
+}
