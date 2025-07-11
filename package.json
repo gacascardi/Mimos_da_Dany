@@ -1,0 +1,17 @@
+{
+  "name": "proxy-server",
+  "version": "1.0.0",
+  "description": "Servidor proxy para evitar problemas de CORS",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "author": "GrazzArte",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "axios": "^1.5.0"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}
