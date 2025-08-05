@@ -1,8 +1,4 @@
-/*
- * Waveform generator ver. 1.0.0
- * Modified by Rascals Themes 2013-2018
- *
- */
+
 
 var Waveform;
 
@@ -181,14 +177,6 @@ var Waveform;
 })(jQuery);
 
 
-/*
- * SimplyAjaxLoader ver. 2.0.0
- * jQuery Ajax Page Loader Plugin
- *
- * Copyright (c) 2013-2018 Mariusz Rek
- * Rascals Themes 2013-2018
- *
- */
 
 (function($) {
 
@@ -560,14 +548,6 @@ var Waveform;
 })(jQuery);
 
 
-/*
- * ResVid ver. 1.0.0
- * jQuery Responsive Video Plugin
- *
- * Copyright (c) 2013-2018 Mariusz Rek
- * Rascals Themes 2013-2018
- *
- */
 
 (function($){
 
@@ -813,15 +793,7 @@ var Waveform;
 })(jQuery);
 
 ;(function ($) {
-/**
- *
- * jquery.binarytransport.js
- *
- * @description. jQuery ajax transport for making binary data type requests.
- * @version 1.0 
- * @author Henry Algus <henryalgus@gmail.com>
- *
- */
+
  
 // use this transport for "binary" data type
 $.ajaxTransport("+binary", function(options, originalOptions, jqXHR){

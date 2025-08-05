@@ -20,13 +20,13 @@ Author URI: https://github.com/gacascardi
 10. Seções
 11. Introdução
 12. Recent Releases
-13. Event Countdown
-15. Events
+13. lista Countdown
+15. cardapio
 16. Biography
 17. Contact
 18. Newsletter
 19. Single Page/Project 
-20. Single Event
+20. Single lista
 21. 404 Error Page
 22. Audio Elements
 23. Gallery/Media
@@ -57,10 +57,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 body {
 	overflow-x: hidden;
-	color: #ccc;
+	color: #fbc9f3;
 	background: #0f0f0f;
 	font-weight:300;
-	font: 16px/1.6 'PT Sans', sans-serif;
+	font:'Barlow Condensed', sans-serif;
 }
 .home, .home * {
 }
@@ -68,7 +68,7 @@ body {
 ::selection { background: #cc0000; color: #fff; text-shadow: none; }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Barlow Condensed', sans-serif;
-	color: #fff;
+	color: #fcbcdb;
 	font-weight: 400;
 	line-height: 1.4;
 	margin-bottom: 30px;
@@ -222,7 +222,7 @@ img.alignright { margin-bottom: 30px; margin-left: 20px; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 .text-center { text-align: center; }
-.color { color: #cc0000; }
+.color { color: #ff08d2; }
 .caps { text-transform: uppercase; }
 .clear { clear:both; display:block; height:1px; margin-top:-1px; overflow:hidden; visibility:hidden; width:0 }
 .clearfix:after { clear:both; content:' '; display:block; font-size:0; height:0; line-height:0; visibility:hidden; width:0 }
@@ -416,7 +416,7 @@ ol,ul {
 }
 #header #main-nav {
 	transition: all 490ms cubic-bezier(0.680, 0.120, 0.060, 0.835);
-	background: #0a0a0a;
+	background: #050003;
 }
 #header.hide-navigation #main-nav {
 	background-color: transparent;
@@ -455,6 +455,7 @@ ol,ul {
 		margin: 0;
 		position: relative;
 		color:#fff;
+		font-weight: 500;
 	}
 		#nav a {
 			font-size: 13px;
@@ -472,7 +473,7 @@ ol,ul {
 		}
 		#nav > ul > li > a:before {
 			content: "";
-			border-bottom: 10px solid #cc0000;
+			border-bottom: 10px solid #ff08c9;
 			display: block;
 			width: 0;
 			top: 7px;
@@ -487,7 +488,7 @@ ol,ul {
 
 		/* Sub nav */
 		#nav ul ul {
-			background: #0a0a0a;
+			background: #e6157a;
 			display: none;
 			left: 0;
 			padding: 0;
@@ -507,9 +508,9 @@ ol,ul {
 					line-height: normal;
 				}
 					#nav ul ul a:hover, #nav ul ul .hover > a, #nav ul ul .current > a, #nav ul ul .current > a:hover {
-						background: #cc0000;
+						background: #f406cc;
 						border: none !important;
-						color: #fff;
+						color: #ff06b4;
 					}
 
 					#nav ul ul ul {
@@ -546,7 +547,7 @@ ol,ul {
 
 		/* Nav player button */
 		#icon-nav .nav-player-btn.status-playing .circle {
-			stroke: #cc0000;
+			stroke: #fb06eb;
 			opacity:1;
 		}
 		#icon-nav .nav-player-btn.status-paused .circle {
@@ -638,7 +639,7 @@ ol,ul {
 /* Procurar input */
 #search {
 	border: 0;
-	background-color: #cc0000;
+	background-color: #f314d1;
 	width: 100%;
 	padding: 30px 30px 30px 30px;
 	font-size: 24px;
@@ -691,7 +692,7 @@ ol,ul {
 	margin:5px;
 }
 .social-icons .circle-btn span {
-	border:2px solid #333;
+	border:2px solid #dd03f1;
 	width:46px;
 	height:46px;
 	border-radius:100%;
@@ -928,13 +929,23 @@ body.responsive-block-on .responsive-block-layer {
 /* ==================================================
   8. Rodapé 
 ================================================== */
+/* Rodapé */
+/* Rodapé */
 #footer {
-	padding: 120px 0;
+    padding: 0;
 	width: 100%;
 	background-color: #0f0f0f;
 }
+.footer-social {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+	margin: 0;
+}
 	#copyrights {
 		color: #999;
+		margin-top: 10px;
 		text-align: center;
 		font-size: 14px;
 		text-transform: uppercase;
@@ -943,6 +954,69 @@ body.responsive-block-on .responsive-block-layer {
 		#copyrights a:hover { color: #fff; }
 
 
+
+/* Lista de ícones sociais */
+ul.footer-social {
+position: relative;
+display: flex;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+ul.footer-social li {
+ position: relative;
+ list-style: none;
+ margin: 0 20px;
+ cursor: pointer;
+    }
+	
+
+ul.footer-social li a {
+    text-decoration: none;
+}
+
+ul.footer-social li a .fa-brands {
+    font-size: 5em;
+    color: #222;
+}
+
+/* Efeito de ícones */
+ul.footer-social li a::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 5em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+ul.footer-social li:nth-child(1) a::before {
+    content: "\f16d"; /* Instagram */
+    background-image: linear-gradient(45deg, 
+        #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, 
+        #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #dc2743;
+}
+
+ul.footer-social li:nth-child(2) a::before {
+    content: "\f232"; /* WhatsApp */
+    color: #25D366;
+    border-bottom: 4px solid #25D366;
+}
+
+ul.footer-social li:nth-child(3) a::before {
+    content: "\f09b"; /* Github */
+    color: #1DA1F2;
+    border-bottom: 4px solid #1DA1F2;
+}
+
+ul.footer-social li:hover a::before {
+    height: 100%;
+}
 /* ==================================================
   9. AJAX  
 ================================================== */
@@ -1100,6 +1174,7 @@ body.apc-open .apc {
 		-webkit-transition: none;
   		transition: none;
 	}
+
 	.apc-page #ajax-container {
 		-webkit-transition: all 2490ms cubic-bezier(0.200, 1.000, 0.210, 1.000);
   		transition: all 2490ms cubic-bezier(0.200, 1.000, 0.210, 1.000);
@@ -1372,7 +1447,7 @@ body.apc-open .apc {
 /* ==================================================
   13. Menu
 ================================================== */
-.event-countdown {
+.lista-countdown {
 	padding: 80px 0;
 	position:relative;
 	z-index:1;
@@ -1427,10 +1502,10 @@ body.apc-open .apc {
 				background-image: none;
 				opacity: 0.6;
 			}
-			.countdown .days {
+			.countdown .titulo2s {
 				background-position: 20px 20px;
 			}
-			.countdown .days:before {
+			.countdown .titulo2s:before {
 				background-position: 30px 0px;
 			}
 			.countdown .hours {
@@ -1443,7 +1518,7 @@ body.apc-open .apc {
 				min-width:210px;
 				background-position: 300px 10px;
 			}
-		h6.upcoming-event {
+		h6.upcoming-lista {
 			font-size: 24px;
 			color: #cc0000;
 			text-transform: uppercase;
@@ -1451,22 +1526,22 @@ body.apc-open .apc {
 			margin-bottom: 0;
 			line-height: normal;
 		}
-		.page-container .event-countdown {
+		.page-container .lista-countdown {
 			margin-top: 0px;
 			margin-bottom: 80px;
 		}
 
 /* ==================================================
-  15. Menu "events"
+  15. Menu "cardapio"
 ================================================== */
-#events {
-	background: transparent url( ../images/events-bg.jpg) center top no-repeat;
+#cardapio {
+	background: transparent url( ../images/cardapio-bg.jpg) center top no-repeat;
 	background-size:cover;
 	height:100vh;
 	position:relative;
 }
-#events:before,
-#events:after {
+#cardapio:before,
+#cardapio:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -1474,21 +1549,21 @@ body.apc-open .apc {
 	z-index: 2;
 	pointer-events: none;
 }
-#events:before {
+#cardapio:before {
 	top: 0;
 	height: 240px;
 	background: linear-gradient(to bottom, black 0%, transparent 100%); 
 }
-#events:after {
+#cardapio:after {
 	bottom: 0;
 	height: 170px;
 	background: linear-gradient(to bottom, transparent 0%, black 100%); 
 }
 
 
-/* Menu header "events"
+/* Menu header "cardapio"
  -------------------------------- */
-.events-header {
+.cardapio-header {
 	position: absolute;
 	top:60px;
 	left:0;
@@ -1497,9 +1572,9 @@ body.apc-open .apc {
 }
 
 
-/* Events Scroll
+/* cardapio Scroll
  -------------------------------- */
-#events-scroll .scroll-content{
+#cardapio-scroll .scroll-content{
 	overflow: auto;
 	height: 100vh;
 }
@@ -1511,13 +1586,13 @@ body .scrollbar-thumb {
 }
 
 
-/* Events list
+/* cardapio list
  -------------------------------- */
  
-.events-container {
+.cardapio-container {
 	padding:200px 0 200px;
 }
-.events-list {
+.cardapio-list {
     list-style: none;
     padding: 0;
     margin: 5px 0 5px 0;
@@ -1525,7 +1600,7 @@ body .scrollbar-thumb {
     flex-direction: column;
     gap: 24px;
 }
-.events-list li {
+.cardapio-list li {
 	width: 100%;
 	color: white;
 	min-height: 80px;
@@ -1533,7 +1608,7 @@ body .scrollbar-thumb {
 	margin: 0 0 6px;
 	position: relative;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: cover; /*Alinhar itens horizontalmente  */
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: row;
@@ -1541,17 +1616,17 @@ body .scrollbar-thumb {
 	background: rgba(0, 0, 0, 0.7 );
 	transition: background 0.2s cubic-bezier( 0.22, 0.63, 0.4, 1 );
 }
-.events-list li:hover,
-.events-list li:hover * {
+.cardapio-list li:hover,
+.cardapio-list li:hover * {
 	background: #cc0000;
 
 }
-.events-list li b,
-.events-list li strong {
+.cardapio-list li b,
+.cardapio-list li strong {
 	font-weight: normal;
 }
-.left-event-block,
-.right-event-block {
+.left-lista-block,
+.right-lista-block {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: row;
@@ -1560,20 +1635,20 @@ body .scrollbar-thumb {
 	justify-content: space-between;
 	align-items: center;
 }
-.left-event-block {
+.left-lista-block {
 	width: 550px;
 	font-family: 'Barlow Condensed', sans-serif;
 }
-.right-event-block {
+.right-lista-block {
 	width: 230px;
 	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
 }
-.left-event-wrap p {
+.left-lista-wrap p {
 	width: auto;
 	display: inline;
 }
-.date-event {
+.titulo-lista {
 	width: auto;
 	display: -ms-flexbox;
 	display: flex;
@@ -1584,7 +1659,7 @@ body .scrollbar-thumb {
 	padding-right: 10px;
 	min-width: 150px;
 }
-.day-event {
+.titulo2-lista {
 	font-size: 40px;
 	line-height: 40px;
 	text-transform: uppercase;
@@ -1592,7 +1667,7 @@ body .scrollbar-thumb {
 	letter-spacing: .12em;
 	margin-right: 7px;
 }
-.month-year-event {
+.subtitulo-lista {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
@@ -1601,27 +1676,27 @@ body .scrollbar-thumb {
 	align-items: flex-start;
 	padding-top: 3px;
 }
-.month-event {
+.subs-lista {
 	font-size: 17px;
 	line-height: 17px;
 }
-.year-event {
+.list-lista {
 	font-size: 15px;
 	line-height: 15px;
 }
-.month-event,
-.year-event {
+.subs-lista,
+.list-lista {
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
-.events-list .line-link {
+.cardapio-list .line-link {
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-right: -.1em;
 	position: relative;
 }
-.location-event {
+.location-lista {
 	display: -ms-flexbox;
 	display: flex;
 	width: 350px;
@@ -1632,7 +1707,7 @@ body .scrollbar-thumb {
 	text-transform: uppercase;
 	overflow: hidden;
 }
-.event-name {
+.lista-name {
 	width: 100%;
 	white-space: inherit;
 	overflow: inherit;
@@ -1643,7 +1718,7 @@ body .scrollbar-thumb {
 	line-height: 110%;
 	margin-bottom: 2px;
 }
-.city-name {
+.chamada-name {
 	width: 100%;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -1778,7 +1853,7 @@ COPILOT
 	background: transparent url(../images/newsletter-bg.jpg) center center no-repeat;
 	background-size: contain;
 	width: 100%;
-	padding:50px 0;
+	padding:40px 0;
 }
 
 	/* Forms */
@@ -1796,7 +1871,7 @@ COPILOT
 			background-color: #fff;
 			background-color: rgb(208, 208, 208);
 			border:0;
-			padding-left:20px;
+			padding-left:10px;
 		}
 		#subscribe-email:focus {
 			background-color:#fff;
@@ -1854,28 +1929,28 @@ COPILOT
 
 
 /* ==================================================
-  20. Single Event 
+  20. Single lista 
 ================================================== */
 
-/* Event meta */
-.event-meta {
+/* lista meta */
+.lista-meta {
 	margin-bottom:40px;
 }
-.event-meta h3 {
+.lista-meta h3 {
 	text-transform:none;
 	margin-top:-40px;
 	margin-bottom: 10px;
 }
-	.event-meta span {
+	.lista-meta span {
 		display:block;
 	}
 	
 
-/* Big event date */
-.event-intro-date {
+/* Big lista titulo */
+.lista-intro-titulo {
 	height: 50vh;
 }
-.big-event-date {
+.big-lista-titulo {
 	position: absolute;
 	bottom: -60px;
 	left: 0;
@@ -1885,11 +1960,11 @@ COPILOT
 	color: #0f0f0f;
 	font-weight:900;
 }
-.big-event-date span {
+.big-lista-titulo span {
 	display:inline-block;
 }
 
-.big-event-date .event-day:after {
+.big-lista-titulo .lista-titulo2:after {
 	content:"/"
 }
 
@@ -3322,7 +3397,7 @@ COPILOT
  -------------------------------- */
 .single-video {
 	background-size:cover;
-	background-image: url(../images/events-bg.jpg);
+	background-image: url(../images/cardapio-bg.jpg);
 }
 .single-video > div {
 	max-width:900px;
@@ -3651,7 +3726,7 @@ p.description {
 	}
 	.tweets li:first-child:before { display: none;}
 
-		.tweets li .date a {
+		.tweets li .titulo a {
 			display: block;
 			margin-top: 12px;
 			font-size: 12px;
@@ -3662,7 +3737,7 @@ p.description {
 			font-weight: normal;
 			width: 100%;
 		}
-		.tweets li .date a:hover { color: #cc0000; }
+		.tweets li .titulo a:hover { color: #cc0000; }
 
 
 /* Divider
@@ -4637,7 +4712,7 @@ a:hover .text-fx-word p span,
 @media only screen and (max-width:1560px) and (min-width:1150px) {
 
 
-	/* Music
+	/* produtos
 	 -------------------------------- */
 	.full-width.items { margin: 40px 40px 40px 0; }
 	.full-width .item { width: 25%; }
@@ -4664,7 +4739,7 @@ a:hover .text-fx-word p span,
 	}
 
 
-	/* Music
+	/* produtos
 	 -------------------------------- */
 	.full-width.items { margin: 40px 40px 40px 0; }
 	.full-width .item { width: 33.3%; }
@@ -4672,20 +4747,20 @@ a:hover .text-fx-word p span,
 	.full-width .item .project-thumb { margin: 0px 0px 40px 40px; }
 
 
-	/* Events
+	/* cardapio
 	 -------------------------------- */
-	#events-list li { height: 200px; }
-	#events-list li:hover { 
+	#cardapio-list li { height: 200px; }
+	#cardapio-list li:hover { 
 		height: 250px;
 		margin-top: -30px;
 	}	
-		/* Date */
-		#events-list .event-date {  }
-		#events-list .event-date:before {  }
+		/* titulo */
+		#cardapio-list .lista-titulo {  }
+		#cardapio-list .lista-titulo:before {  }
 		
 		/* Title */
-		#events-list h2, #events-list h2 a { font-size: 48px; }
-		#events-list .event-location { font-size: 16px; }
+		#cardapio-list h2, #cardapio-list h2 a { font-size: 48px; }
+		#cardapio-list .lista-location { font-size: 16px; }
 
 
 	/* Small Elements
@@ -4702,10 +4777,10 @@ a:hover .text-fx-word p span,
 @media only screen and (min-width:768px) and (max-width:1020px) {
 
 
-	/* Events
+	/* cardapio
  	  -------------------------------- */
 
-	/* Single event */
+	/* Single lista */
 	.tickets-block {
 		margin-top: 40px;
 	}
@@ -4788,7 +4863,7 @@ a:hover .text-fx-word p span,
 		position:absolute;
 		top:0;
 		left:50%;
-		transform:translateX(-50%);
+		transform:translateX(-70%);
 	}
 
 	/* Navigation list */
@@ -4882,9 +4957,9 @@ a:hover .text-fx-word p span,
 	}
 
 
-	/* Music
+	/* produtos
  	 -------------------------------- */
- 	.music-header.section-content {
+ 	.produtos-header.section-content {
  	 	padding-bottom:40px;
 	}
 	.full-width.items {
@@ -4909,29 +4984,29 @@ a:hover .text-fx-word p span,
 		display:none;	}
 
 
-	/* Events
+	/* cardapio
 	 -------------------------------- */
-	.section-content.events-header {
+	.section-content.cardapio-header {
     	padding-bottom: 40px;
 	}
-.events-list li:hover,
-.events-list li:hover * {
+.cardapio-list li:hover,
+.cardapio-list li:hover * {
     color: #fff !important;
     background: #cc0000 !important;
 }
-	.left-event-block {
+	.left-lista-block {
 		width:100%;
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	.right-event-block {
+	.right-lista-block {
 		width:0px;
 	}
-	.location-event,
-	.date-event {
+	.location-lista,
+	.titulo-lista {
 		width:100%;
 	}
-	.events-list .line-link {
+	.cardapio-list .line-link {
 		position:absolute;
 		left:0;
 		right:0;
@@ -4939,23 +5014,23 @@ a:hover .text-fx-word p span,
 		bottom:0;
 		text-indent:-999em;
 	}
-	.events-list .line-link:after,
-	.events-list .line-link:before {
+	.cardapio-list .line-link:after,
+	.cardapio-list .line-link:before {
 		display:none;
 	}
-	.event-name {
+	.lista-name {
 		font-size:15px;
 	}
 	
-	/* Single event */
+	/* Single lista */
 	.tickets-block {
 		margin-top: 40px;
 	}
-	.big-event-date {
+	.big-lista-titulo {
 		bottom: -10px;
 		font-size: 150px;
 	}
-	.event-intro-date {
+	.lista-intro-titulo {
     	height: 400px;
 	}
 	
@@ -5096,6 +5171,7 @@ a:hover .text-fx-word p span,
  		line-height:24px;
 		
  	}
+	
 
 	/* Thumb */
 	.thumb  {
@@ -5186,7 +5262,7 @@ a:hover .text-fx-word p span,
 	}
 
 
-	/* Music
+	/* produtos
  	 -------------------------------- */
 	.full-width.items {
 		margin: 20px 20px 20px 0;
@@ -5211,18 +5287,18 @@ a:hover .text-fx-word p span,
 	}
 
 
-	/* Events
+	/* cardapio
 	 -------------------------------- */
-	 .event-intro-date {
+	 .lista-intro-titulo {
     	height: 30vh;
 	}
-	.big-event-date {
+	.big-lista-titulo {
 		bottom: -10px;
 		font-size: 110px;
 	}
 	
-	/* Single event */
-	.event-intro-date {
+	/* Single lista */
+	.lista-intro-titulo {
     	height: 300px;
 	}
 
