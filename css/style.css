@@ -6071,7 +6071,20 @@ body.responsive-block-on .responsive-trigger .icon::after {
   .responsive-trigger .icon::after {
     top: 10px;
   }
+/* ===========================
+   ESCONDER LOGO QUANDO NO TOPO DA PÁGINA
+   =========================== */
+#header #logo {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
 
+/* Logo escondida quando no topo */
+body.at-top #header #logo {
+  opacity: 0;
+  pointer-events: none;
+}
+	
   /* Animação para "X" quando o menu abre */
   body.responsive-block-on .responsive-trigger .icon {
     background-color: transparent;
@@ -6106,4 +6119,18 @@ body.responsive-block-on .responsive-trigger .icon::after {
 	/* cardapio
 	 -------------------------------- */
 
-	}/* Single lista */
+	}
+	/* ===========================
+   ESCONDER LOGO QUANDO NO TOPO DA PÁGINA
+   =========================== */
+#header #logo {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Logo escondida quando no topo */
+body.at-top #header #logo {
+  opacity: 0;
+  pointer-events: none;
+}
+/* Single lista */

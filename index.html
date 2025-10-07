@@ -948,5 +948,21 @@
 		<!-- custom scripts -->
 		<script src="js/scripts.js"></script>
 		<script src="js/custom.js"></script>
+		<script>
+  // Esconde a logo quando está no topo
+  window.addEventListener('scroll', function() {
+    if (window.scrollY <= 50) {
+      document.body.classList.add('at-top');
+    } else {
+      document.body.classList.remove('at-top');
+    }
+  });
+
+  // Garante que a classe seja aplicada ao carregar
+  if (window.scrollY <= 50) {
+    document.body.classList.add('at-top');
+  }
+</script>
+
 	</body>
 </html>
