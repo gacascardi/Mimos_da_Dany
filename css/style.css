@@ -1743,13 +1743,14 @@ body .scrollbar-thumb {
 	.bio-text-block {
 		text-align:center;
 		padding-bottom: 80px;
+		font-size: 20px;
 	}
 	.container.full-width.stats-bg-block {
 		background-size:cover;
 		background-image: url(../images/bg01.jpg);
 		padding-left:10%;
 		padding-right: 10%;
-		font-size: 10px;
+		font-size: 25px;
 		max-width: 200px; 
 		max-height: 200px;
 	}
@@ -1769,7 +1770,7 @@ body .scrollbar-thumb {
 		display:inline-block;
 		text-align:center;
 		z-index: 2;
-		font-size: 10px;
+		font-size: 18px;
 	}
 	.bio-bg-block img {
 		margin-bottom:0;
@@ -2699,6 +2700,7 @@ COPILOT
 .gallery-grid-item {
 	padding: 0 10px 20px;
 	object-fit: cover;
+	text-align: justify;
 }
 
 

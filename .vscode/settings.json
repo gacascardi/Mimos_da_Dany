@@ -1,4 +1,7 @@
 {
   "DockerRun.DisableDockerrc": true,
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "cSpell.words": [
+    "Dany"
+  ]
 }
